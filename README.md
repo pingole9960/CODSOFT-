@@ -1,29 +1,4 @@
-🎯 Number Guessing Game
 
-Welcome to the Number Guessing Game – a fun little project where you test your guessing skills and challenge your luck!
-Can you guess the secret number? Let’s find out!
-
-
----
-
-🚀 Features
-
-🔢 Random number generation
-
-🎮 Interactive gameplay
-
-💡 Smart hints (Too High / Too Low)
-
-🧠 Test your logic and luck
-
-
-
-
-
-Got it! Here's the full and attractive README.md file for your Java-based Number Guessing Game with the file name NumberGame.java and your GitHub username Pingole9960:
-
-
----
 
 # 🎯 Number Guessing Game
 
