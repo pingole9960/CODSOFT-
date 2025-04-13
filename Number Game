@@ -1,0 +1,43 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		int num=(int)(Math.random()*100);
+			System.out.println("            ***WELCOME TO NUMBER GUESSING GAME***");
+		 System.out.print("                  Let's Play!");
+		 System.out.println();
+		 System.out.println();
+		 System.out.println();	
+		System.out.println("Imp Note!!\n1:Enter no in range as 1 to 100" + 
+		                   "\n2:Attempt Limitation is 3");
+		int Score=0,round=0;
+		boolean againgame=true;
+		while(againgame){
+		   int attempt=3,min=0;
+		   boolean corrct=false;
+		   while(min<attempt){
+		   System.out.print("Guess the no:");
+	    	Scanner t=new Scanner(System.in);
+	    	int guessno=t.nextInt();
+	    	min++;
+	    	if(guessno==num){
+	    	  corrct=true;
+	    	  System.out.print("Congrat!"+"\nyou are correct:");
+	    	}
+	    	else if(guessno<num){
+	    	  System.out.println("Too Low");
+	    	}
+	    	else{
+	    	      System.out.println("Too High");
+	    	}
+		   }
+		   if(!corrct)
+		                System.out.println("limit exceed");
+		   System.out.println("Do you want play again:y/n");
+	    	Scanner sc=new Scanner(System.in);
+	    	String yesgame=sc.next().toLowerCase();
+	    	againgame=yesgame.equals("y");
+	    	round++;
+		}
+		System.out.println("Total Scored:"+Score+" in round "+round+"\nHappy for you To play this Game");
+	}
+}
