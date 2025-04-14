@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("***********WELCOME TO STUDENT GRADE CALCULATOR**********\n");
+		System.out.println("Enter the 5 Subject mark:");
+		Scanner sc=new Scanner(System.in);
+		int s=0;
+		for(int i=1;i<=5;i++){
+		System.out.print("Enter the mark out of 100 "+i+" subject mark is =");
+		int n=sc.nextInt();
+		if(n<0 || n>100){
+		         i--;
+		         System.out.println("Please enter marks in the range 1-100");
+		}
+		s+=n;
+		}
+		int avg=s/5;
+        System.out.println("\n\n");
+		System.out.println("Total Marks="+s);
+		System.out.println("Avgrage percentage ="+avg+"%");
+		if(avg>90)
+			System.out.println("Your grade is A+");
+		else if(avg>80)
+			System.out.println("Your grade is A");
+		else if(avg>70)
+			System.out.println("Your grade is B");
+		else
+				System.out.println("Your grade is C");
+	}
+}
