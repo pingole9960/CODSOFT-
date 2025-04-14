@@ -1,0 +1,51 @@
+import java.util.*;
+
+class ATM
+{
+	int bal=0;
+	void balance(){
+		System.out.println("Current Balance ="+bal+"\n");
+	}
+	void deposite(){
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter your amount to deposite=");
+		int m=s.nextInt();
+		bal+=m;
+		System.out.println("after deposite current balance is ="+bal+"\n");
+	}	
+	void withdraw(){
+		Scanner k=new Scanner(System.in);
+		System.out.println("Enter your amount for withdraw=");
+		int o=k.nextInt();
+		bal-=o;
+		System.out.println("after withdrwa current Balance is="+bal+"\n");
+	}
+}
+
+public class Main {
+	public static void main(String[] args) {
+		ATM AT=new ATM();
+	Scanner sc=new Scanner(System.in);
+	   int n;
+		System.out.println("            <<<<<<<ATM INTERFACE>>>>>>>\n\n");
+		do{
+		System.out.println("1.Check Balance\n2.Deposite\n3.Withdraw\n4.Exit");
+		System.out.println("Enter your choice:");
+		n=sc.nextInt();
+		switch(n){
+			case 1:
+			            AT.balance();
+			            break;
+			 case 2:
+			 			AT.deposite();
+			 			break;
+			 case 3:
+			 			AT.withdraw();
+			 			break;	
+			 case 4:
+			 			System.out.println("Thank You for using ATM machine");
+			 			break;
+		}
+		}while(n!=4);
+	}
+}
